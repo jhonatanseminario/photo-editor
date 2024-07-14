@@ -20,24 +20,6 @@ body {
     overflow-x: hidden;
 }
 
-footer {
-    position: absolute;
-    right: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    bottom: 0px;
-    animation: materializeJump 1s ease-out;
-}
-
-@keyframes materializeJump {
-    from {
-        transform: translateX(720px);
-    }
-    to {
-        transform: translateX(0px);
-    }
-}
-
 .main-container {
     height: 75%;
     min-height: 480px;
@@ -461,10 +443,6 @@ input[type="range"]:disabled {
         background-color: white;
     }
 
-    footer {
-        display: none;
-    }
-
     .main-container {
         height: 100%;
         width: 100%;
@@ -505,7 +483,7 @@ input[type="range"]:disabled {
         position: absolute;
         top: 730px;
         background-color: var(--background-image);
-        height: 100px;
+        height: 32px;
         width: 100%;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
