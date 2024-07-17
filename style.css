@@ -505,7 +505,7 @@ input[type="range"]:disabled {
     }      
 
     input[type="range"] {
-        width: 75%;
+        width: 80%;
     
     }
 
@@ -552,17 +552,21 @@ input[type="range"]:disabled {
     
     #grayscaleValue {
         top: 30px;
+        left: 80%;
     }
 
     #brightnessValue {
         top: 130px;
+        left: 80%;
     }
 
     #contrastValue {
         top: 230px;
+        left: 80%;
     }
 
     #saturateValue {
         top: 330px;
+        left: 80%;
     }
 }
