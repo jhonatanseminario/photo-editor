@@ -510,7 +510,7 @@ input[type="range"]:disabled {
     }
 
     #downloadButton {
-        top: 620px;
+        top: 600px;
         margin-bottom: 100px;
         padding: 18px 35px 15px;
         border-radius: 5px;
