@@ -344,9 +344,9 @@ input[type="range"]:disabled {
 }
 
 #downloadButton:active {
-    background-color: rgb(75, 120, 255);
+    background-color: #3498db;
     transform: scale(0.9);
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
 }
 
 #downloadButton:disabled {
@@ -512,6 +512,9 @@ input[type="range"]:disabled {
     #downloadButton {
         top: 620px;
         margin-bottom: 100px;
+        padding: 18px 35px 15px;
+        border-radius: 5px;
+        font-size: 20px;
     }
 
     #grayscaleRange {
