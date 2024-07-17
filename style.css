@@ -477,8 +477,8 @@ input[type="range"]:disabled {
     }
 
     .inputs-container {
-        top: 140px;
-        width: 90%;
+        top: 120px;
+        width: 80%;
         height: 430px;
     }
 
