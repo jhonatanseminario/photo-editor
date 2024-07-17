@@ -334,7 +334,7 @@ input[type="range"]:disabled {
     font-size: 16px;
     border: none;
     box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s;
+    transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease;
 }
 
 #downloadButton:hover {
