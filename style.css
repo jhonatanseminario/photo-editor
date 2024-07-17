@@ -276,17 +276,17 @@ input[type="range"] {
     width: 80%;
     height: 8px;
     border-radius: 4px;
-    background:#c6e2f7;
+    background: var(--background-image);
 
 }
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    background:#3498db;
+    background: var(--button);
     cursor: pointer;
     box-shadow:0px 0px 4px 1px rgba(0,0,0,0.2);
     -webkit-transition: .2s;
@@ -294,12 +294,13 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
-    opacity: 0.8;
+    background: #2b6d87;
 }
 
 input[type="range"]:disabled::-webkit-slider-thumb {
     opacity: 1;
     cursor: default;
+    background: #2b6d87;
 }
 
 input[type="range"]:disabled {
@@ -323,23 +324,23 @@ input[type="range"]:disabled {
 
 #downloadButton {
     position: absolute;
-    top: 87%;
-    background-color: var(--button);
+    top: 86.6%;
+    background-color: #3498db;
     color: white;
-    padding: 14px 28px;
+    padding: 14px 28px 12px;
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
     font-size: 16px;
     border: none;
-    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s;
 }
 
 #downloadButton:hover {
-    background-color: royalblue;
+    background-color: var(--button);
     transform: scale(1.1);
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
 }
 
 #downloadButton:active {
@@ -349,14 +350,15 @@ input[type="range"]:disabled {
 }
 
 #downloadButton:disabled {
-    background-color: #ccc;
-    color: #999;
+    background-color: #d3d3d3;
+    color: #a9a9a9;
     box-shadow: none;
+    cursor: default;
 }
 
 #downloadButton:disabled:hover {
-    background-color: #ccc;
-    color: #999;
+    background-color: #d3d3d3;
+    color: #a9a9a9;
     transform: scale(1);
 }
 
