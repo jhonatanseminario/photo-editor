@@ -68,7 +68,7 @@ body {
 }
 
 .material-symbols-outlined {
-    font-size: 40px;
+    font-size: 80px;
 }
 
 .div-image {
@@ -370,13 +370,18 @@ input[type="range"]:disabled {
     justify-content: center;
     gap: 16px;
     color: var(--button);
-    padding: 20% 20%;
-    border-radius: 5px;
+    padding: 15% 25%;
+    border-radius: 6px;
     cursor: pointer;
-    font-weight: bold;
-    border: 4px dashed;
-    font-size: 24px;
+    font-weight: bolder;
+    border: 6px dashed;
+    font-size: 20px;
     text-wrap: nowrap;
+    transition: background-color 0.2s ease;
+}
+
+#uploadArea:hover {
+    background-color: #ffffff33;
 }
 
 #uploadedImage {
