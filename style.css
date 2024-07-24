@@ -464,7 +464,7 @@ input[type="range"]:disabled {
     .image-container {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
-        height: 75%;
+        height: 50%;
         width: 100%;
         top: 0;
     }
@@ -472,7 +472,7 @@ input[type="range"]:disabled {
     .controls-container {
         border-bottom-left-radius: 0px;
         border-top-left-radius: 0px;
-        height: 25%;
+        height: 50%;
         width: 100%;
         bottom: 0;
     }
