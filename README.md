@@ -1,5 +1,4 @@
-# Photo Editor 📸
-
+# Editor de Fotos
 Editor de fotos en línea, permite al usuario subir una imagen, aplicarle una serie de filtros y posteriormente descargar la imagen modificada.
 
 ## 🌟 Características Destacadas
