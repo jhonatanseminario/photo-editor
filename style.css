@@ -471,7 +471,7 @@ input[type="range"]:disabled {
     .controls-container {
         border-bottom-left-radius: 0px;
         border-top-left-radius: 0px;
-        height: 275px;
+        height: 485px;
         width: 100%;
         bottom: 0;
     }
