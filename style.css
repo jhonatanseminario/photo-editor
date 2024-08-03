@@ -128,13 +128,13 @@ body {
 
 .erase-button {
     position: absolute;
-    bottom: 50px;
-    left: 64px;
+    bottom: 64px;
+    left: 128px;
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background-color: rgb(32, 88, 255);
-    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    background-color: var(--button);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2), 2px 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: all 0.3s;
     display: none;
@@ -142,13 +142,13 @@ body {
 
 .reset-button {
     position: absolute;
-    bottom: 50px;
-    right: 64px;
+    bottom: 64px;
+    right: 128px;
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background-color: rgb(32, 88, 255);
-    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.4);
+    background-color: var(--button);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2), 2px 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: all 0.3s;
     display: none;
@@ -156,12 +156,13 @@ body {
 
 .reset-button:hover,
 .erase-button:hover {
-    background-color: royalblue;
+    background-color: #3498db;;
 }
 
 .reset-button:active,
 .erase-button:active {
-    transform: scale(0.9);
+    background-color: var(--button);
+    transform: scale(0.95);
 }
 
 .button-icon {
@@ -267,6 +268,12 @@ body {
 .modal-button:active {
     background-color: slateblue;
     transform: scale(0.95);
+}
+
+.custom-button {
+    top: 9px;
+    left: 9px;
+    font-size: 56px;
 }
 
 input[type="range"] {
@@ -377,6 +384,7 @@ input[type="range"]:disabled {
     font-size: 20px;
     text-wrap: nowrap;
     transition: background-color 0.2s ease;
+    user-select: none;
 }
 
 #uploadArea:hover {
