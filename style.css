@@ -21,13 +21,12 @@ body {
 }
 
 .main-container {
-    height: 75%;
-    min-height: 480px;
+    height: 538px;
     aspect-ratio: 16/9;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    animation: materializeUp 0.5s ease-out;
+    animation: materializeUp .3s ease-out;
 }
 
 @keyframes materializeUp {
@@ -308,7 +307,7 @@ input[type="range"]:disabled {
 }
 
 .erase-active {
-    animation: materializeDown 0.5s ease-out;
+    animation: materializeDown .5s ease-out;
 }
 
 @keyframes materializeDown {
@@ -464,7 +463,7 @@ input[type="range"]:disabled {
     .image-container {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
-        height: 50%;
+        height: 360px;
         width: 100%;
         top: 0;
     }
@@ -472,7 +471,7 @@ input[type="range"]:disabled {
     .controls-container {
         border-bottom-left-radius: 0px;
         border-top-left-radius: 0px;
-        height: 50%;
+        height: 275px;
         width: 100%;
         bottom: 0;
     }
