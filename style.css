@@ -463,7 +463,7 @@ input[type="range"]:disabled {
     .image-container {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
-        height: 360px;
+        height: 500px;
         width: 100%;
         top: 0;
     }
@@ -473,7 +473,7 @@ input[type="range"]:disabled {
         border-top-left-radius: 0px;
         height: 485px;
         width: 100%;
-        bottom: 0;
+        top: 500px;
     }
 
     .background-title {
