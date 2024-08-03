@@ -212,8 +212,8 @@ function hideModal() {
 }
 
 function showModal() {
-    const modal = document.querySelector('.modal');
-    modal.style.display = 'block';
+    const modal = document.querySelector(".modal");
+    modal.style.display = "block";
     darkBackground.style.display = "block";
 }
 
