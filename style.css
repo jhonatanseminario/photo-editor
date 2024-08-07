@@ -186,7 +186,7 @@ body {
 
 .modal {
     position: fixed;
-    width: 400px;
+    width: 360px;
     height: 350px;
     background-color: white;
     color: rgb(63, 63, 63);
@@ -211,7 +211,7 @@ body {
 
 .background {
     position: absolute;
-    width: 400px;
+    width: 360px;
     height: 64px;
     top: 0;
     left: 0;
@@ -223,7 +223,7 @@ body {
 .modal-title {
     position: absolute;
     top: 18px;
-    left: 79px;
+    left: 59px;
     font-size: 22px;
     color: white;
     z-index: 2;
@@ -234,7 +234,7 @@ body {
     top: 240px;
     font-size: 16px;
     font-weight: bold;
-    left: 80px;
+    left: 60px;
 }
 
 .modal-icon {
@@ -249,7 +249,7 @@ body {
 .modal-button {
     position: absolute;
     top: 280px;
-    left: 146px;
+    left: 126px;
     width: 110px;
     padding: 12px 24px;
     background-color: #3498db;
@@ -283,7 +283,7 @@ body {
 .check-icon {
     position: absolute;
     top: 80px;
-    left: 125px;
+    left: 105px;
     height: 150px;
 }
 
