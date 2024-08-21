@@ -17,12 +17,12 @@
 <body>
   <main class="main-container">
     <div class="image-container">
-      <div id="uploadArea" class="custom-upload-area">
+      <div id="uploadArea" class="upload-area">
         <span class="material-symbols-outlined">backup</span>
         SUBIR IMAGEN
       </div>
       <div class="div-image" style="display: none">
-        <img id="uploadedImage" src="" alt="Imagen subida" style="display: none;">
+        <img id="uploadedImage" class="uploaded-image" src="" alt="Imagen subida" style="display: none;">
       </div>
       <div class="reset-button" title="Limpiar filtros">
         <span class="material-symbols-outlined button-icon custom-button">cleaning_services</span>
@@ -48,7 +48,7 @@
         <span id="saturateValue" class="value">100%</span>
         <input type="range" id="saturateRange" min="0" max="10" value="5" step="0.1">
       </div>
-      <button id="downloadButton" class="custom-download-btn">DESCARGAR</button>
+      <button id="downloadButton" class="download-button">DESCARGAR</button>
       <div class="footer-mobile"></div>
     </div>
   </main>
@@ -56,7 +56,7 @@
   <div class="modal">
     <div class="background"></div>
     <div class="modal-title">Descarga Completada</div>
-    <img src="https://media.tenor.com/TvJUrCWgPTsAAAAj/check-mark-good.gif" alt="Ícono de descarga animado y sonriendo" class="check-icon">
+    <img src="https://media.tenor.com/TvJUrCWgPTsAAAAj/check-mark-good.gif" alt="Ícono de descarga animado y sonriendo" class="modal-icon">
     <div class="modal-text">Tu archivo ha sido descargado</div>
     <button class="modal-button" id="acceptButton">Cerrar</button>
   </div>
