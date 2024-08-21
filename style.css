@@ -18,6 +18,10 @@ body {
     height: 100vh;
     overflow-x: hidden;
     background-color: var(--primary-color);
+
+    @media only screen and (width < 900px) {
+        background-color: #ffffff;
+    }
 }
 
 input {
@@ -51,6 +55,10 @@ input {
     &:disabled {
         opacity: 0.6;
     }
+
+    @media only screen and (width < 900px) {
+        width: 80%;
+    }
 }
 
 body,
@@ -70,6 +78,12 @@ body,
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     animation: fadeIn .3s ease-out;
+
+    @media only screen and (width < 900px) {
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
+    }
 }
 
 @keyframes fadeIn {
@@ -95,6 +109,14 @@ body,
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     background-color: var(--secondary-color);
+
+    @media only screen and (width < 900px) {
+        top: 0;
+        width: 100%;
+        height: 500px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
 }
 
 .controls-container {
@@ -103,6 +125,14 @@ body,
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     background-color: #fff;
+
+    @media only screen and (width < 900px) {
+        top: 500px;
+        width: 100%;
+        height: 485px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
 }
 
 .upload-area {
@@ -168,6 +198,16 @@ body,
 
 .erase-button {
     left: 128px;
+
+    @media only screen and (width < 900px) {
+        left: 48px;
+    }
+}
+
+.reset-button {
+    @media only screen and (width < 900px) {
+        right: 48px;
+    }
 }
 
 .button-icon {
@@ -191,6 +231,10 @@ body,
     width: 100%;
     border-top-left-radius: 8px;
     background-color: #3498db;
+
+    @media only screen and (width < 900px) {
+        border-top-left-radius: 0px;
+    }
 }
 
 .title {
@@ -208,6 +252,12 @@ body,
     border: solid #ccc 3px;
     border-radius: 6px;
     background-color: #f0f0f0;
+
+    @media only screen and (width < 900px) {
+        top: 120px;
+        width: 80%;
+        height: 430px;
+    }
 }
 
 .label,
@@ -265,10 +315,26 @@ body,
         transform: scale(1);
         color: #a9a9a9;
     }
+
+    @media only screen and (width < 900px) {
+        top: 610px;
+        margin-bottom: 100px;
+        padding: 18px 35px 15px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
 }
 
 .footer-mobile {
     display: none;
+
+    @media only screen and (width < 900px) {
+        display: block;
+        position: absolute;
+        top: 730px;
+        height: 1px;
+        width: 100%;
+    }
 }
 
 @keyframes fadeInOut {
@@ -432,95 +498,20 @@ body,
     top: 76%;
 }
 
-@media only screen and (max-width: 900px) {
-    body {
-        background-color: white;
-    }
-
-    .main-container {
-        height: 100%;
-        width: 100%;
-        box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
-    }
-
-    .image-container {
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-        height: 500px;
-        width: 100%;
-        top: 0;
-    }
-
-    .controls-container {
-        border-bottom-left-radius: 0px;
-        border-top-left-radius: 0px;
-        height: 485px;
-        width: 100%;
-        top: 500px;
-    }
-
-    .background-title {
-        border-top-left-radius: 0px;
-    }
-
-    .inputs-container {
-        top: 120px;
-        width: 80%;
-        height: 430px;
-    }
-
-    .footer-mobile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 730px;
-        background-color: var(--secondary-color);
-        height: 1px;
-        width: 100%;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    .erase-button {
-        left: 48px;
-    }
-    
-    .reset-button {
-        right: 48px;
-    }      
-
-    input[type="range"] {
-        width: 80%;
-    
-    }
-
-    .download-button {
-        top: 610px;
-        margin-bottom: 100px;
-        padding: 18px 35px 15px;
-        border-radius: 5px;
-        font-size: 20px;
-    }
-
+@media only screen and (width < 900px) {
     #grayscaleRange {
-        position: absolute;
         top: 70px;
     }
 
     #brightnessRange {
-        position: absolute;
         top: 170px;
     }
 
     #contrastRange {
-        position: absolute;
         top: 270px;
     }
 
     #saturateRange {
-        position: absolute;
         top: 370px;
     }
 
@@ -540,23 +531,26 @@ body,
         top: 330px;
     }
     
+    #grayscaleValue,
+    #brightnessValue,
+    #contrastValue,
+    #saturateValue {
+        left: 80%;
+    }
+
     #grayscaleValue {
         top: 30px;
-        left: 80%;
     }
 
     #brightnessValue {
         top: 130px;
-        left: 80%;
     }
 
     #contrastValue {
         top: 230px;
-        left: 80%;
     }
 
     #saturateValue {
         top: 330px;
-        left: 80%;
     }
 }
