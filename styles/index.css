@@ -361,7 +361,7 @@ body,
     display: none;
     position: fixed;
     width: 360px;
-    height: 350px;
+    height: 370px;
     padding: 0;
     border-radius: 8px;
     font-family: inherit;
@@ -402,7 +402,7 @@ body,
 
 .modal-text {
     position: absolute;
-    top: 240px;
+    top: 250px;
     left: 60px;
     font-size: 16px;
     font-weight: bold;
@@ -410,7 +410,7 @@ body,
 
 .modal-button {
     position: absolute;
-    top: 280px;
+    top: 300px;
     left: 126px;
     width: 110px;
     padding: 12px 24px;
