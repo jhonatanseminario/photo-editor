@@ -31,22 +31,26 @@ input {
     border-radius: 4px;
     background: var(--secondary-color);
 
-    &::-webkit-slider-thumb {
+    &::-webkit-slider-thumb,
+    &::-moz-range-thumb {
         appearance: none;
         width: 24px;
         height: 24px;
         border-radius: 50%;
+        border: none;
         background: var(--tertiary-color);
         box-shadow:0px 0px 4px 1px rgba(0,0,0,0.2);
         cursor: pointer;
         transition: background-color .2s;
     }
     
-    &::-webkit-slider-thumb:hover {
+    &::-webkit-slider-thumb:hover,
+    &::-moz-range-thumb:hover {
         background-color: #2b6d87;
     }
     
-    &:disabled::-webkit-slider-thumb {
+    &:disabled::-webkit-slider-thumb,
+    &:disabled::-moz-range-thumb {
         opacity: 1;
         cursor: default;
         background-color: #2b6d87;
